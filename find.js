@@ -9,3 +9,17 @@ const firstEven = numbers.find((number) => {
   }
 });
 console.log(firstEven);
+
+const students = [
+  { name: "Shakib", marks: 60, passed: true },
+  { name: "Rahim", marks: 45, passed: false },
+  { name: "Karim", marks: 80, passed: true },
+];
+
+// Find first student who scored above 50 AND passed
+const goodStudent = students.find(
+  (student) => student.marks > 50 && student.passed
+);
+
+console.log(goodStudent);
+// { name: "Shakib", marks: 60, passed: true }
